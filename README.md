@@ -6,9 +6,9 @@ To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
 
-## Neural Network Model
+Google stock prices are given in trainset.csv and testset.csv files
 
-Include the neural network model diagram.
+![image](https://github.com/laakshit-D/rnn-stock-price-prediction/assets/119559976/003aa5bd-3367-4143-8cec-0a3e89f88428)
 
 ## DESIGN STEPS
 
@@ -35,6 +35,7 @@ from keras.models import Sequential
 ```
 ```py
 dataset_train = pd.read_csv('trainset.csv')
+dataset_train.head()
 ```
 ```py
 train_set = dataset_train.iloc[:,1:2].values
